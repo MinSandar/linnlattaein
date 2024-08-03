@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linn Latt Aein</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <!-- Shop Name -->
+            <div class="shop-name">
+                <a href="index.html">Linn Latt Aein</a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="aboutus.html">Our Story</a></li>
+                </ul>
+            </nav>
+
+            <!-- Icon Container -->
+            <div class="icon-container">
+                <!-- Like Icon -->
+                <a href="wishlist.html" class="icon-link">
+                    <img src="images/like.ico" alt="Like Icon" class="icon-img">
+                </a>
+
+                <!-- Cart Icon -->
+                <a href="cart.html" class="icon-link">
+                    <img src="images/totebag.ico" alt="Cart Icon" class="icon-img">
+                </a>
+
+                <!-- User Icon -->
+                <a href="account.html" class="icon-link">
+                    <img src="images/user.ico" alt="User Icon" class="icon-img">
+                </a>
+            </div>
+
+            <!-- Responsive Menu Icon -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main class="form-container">
+        <section class="welcome-message">
+            <h2>Heartfelt Thanks for Your Contribution</h2>
+            <p>
+                Thank you for considering a contribution to our cause. By supporting us, you help advance child education and promote social well-being through sustainable practices and community engagement in Myanmar. We appreciate that you are contributing items that are in <span style="font-weight: bold;">70% to 90% good condition</span>, ensuring they can be cherished by new owners. Please complete this form to donate your pre-loved items and make a positive impact.            </p>
+        </section>
+
+            <form action="YOUR_FORM_SUBMISSION_URL" method="post">
+                <!-- Section A: Contributor Info -->
+                <fieldset>
+                    <legend>Section A: Contributor Info</legend>
+                    <label for="contributor-name">Contributor Name *</label>
+                    <input type="text" id="contributor-name" name="contributor_name" required>
+
+                    <label for="email-address">Email Address *</label>
+                    <input type="email" id="email-address" name="email_address" required>
+
+                    <label for="phone-number">Phone Number *</label>
+                    <input type="tel" id="phone-number" name="phone_number" required>
+                </fieldset>
+
+                <!-- Section B: Contribution Item Details -->
+                <fieldset>
+                    <legend>Section B: Contribution Item Details</legend>
+                    <label for="category">Choose Category *</label>
+                    <select id="category" name="category" required>
+                        <option value="Books">Books</option>
+                        <option value="Clothes">Clothes</option>
+                        <option value="Jewellery and accessories">Jewellery and Accessories</option>
+                        <option value="Shoes">Shoes</option>
+                        <option value="Bags">Bags</option>
+                        <option value="Kids items">Kids Items</option>
+                        <option value="Kitchen wears">Kitchen Wares</option>
+                    </select>
+
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description"></textarea>
+
+                    <label for="number-of-items">Number of Items *</label>
+                    <input type="number" id="number-of-items" name="number_of_items" required>
+
+                    <label for="price">Original Price or Market Price</label>
+                    <input type="text" id="price" name="price">
+
+                    <label for="condition">Condition *</label>
+                    <select id="condition" name="condition" required>
+                        <option value="Good">Good</option>
+                        <option value="Very good">Very Good</option>
+                        <option value="Like New">Like New</option>
+                    </select>
+                </fieldset>
+
+                <!-- Section C: Choose Your Contribution -->
+                <fieldset>
+                    <legend>Section C: Choose Your Contribution</legend>
+                    <p>Choose your contribution. Please contribute the suggested percentage or give what you can afford.
+                        Higher contributions help us to share more with those in need.</p>
+
+                    <label>
+                        <input type="radio" name="contribution" value="50%" required>
+                        50%
+                    </label>
+                    <label>
+                        <input type="radio" name="contribution" value="70%">
+                        70%
+                    </label>
+                    <label>
+                        <input type="radio" name="contribution" value="100%">
+                        100%
+                    </label>
+                </fieldset>
+
+                <!-- Acknowledgement -->
+                <fieldset>
+                    <legend>Acknowledgement *</legend>
+                    <label>
+                        <input type="checkbox" name="acknowledgement_condition" required>
+                        I acknowledge that the items contributed are in the stated condition and I agree to the
+                        contribution percentage selected above.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="acknowledgement_updates">
+                        I agree to receive updates and communication regarding my contribution and the charity shop's
+                        activities.
+                    </label>
+                </fieldset>
+
+                <button type="submit">Submit Contribution</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Our Charity Shop</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="aboutus.html">Our Story</a></li>
+                    <li><a href="donationportal.html">Contribute</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: <a href="linnlattaein.charityshop@gmail.com">linnlattaein.charityshop@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+1234567890">+95 (952) 10-912</a></li>
+                    <li>Viber: Linn Latt Aein - CharityShop</li>
+                    <li>Telegram: Linn Latt Aein - CharityShop</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/charityshop" target="_blank"><img src="images/Facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/charityshop" target="_blank"><img src="images/tiktok.png"
+                            alt="TikTok"></a>
+                    <a href="https://t.me/charityshop" target="_blank"><img src="images/telegram.png"
+                            alt="Telegram"></a>
+                    <a href="viber://chat?number=123456789" target="_blank"><img src="images/viber.png" alt="Viber"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Linn Latt Aein - Charity Shop. All rights reserved. | Designed by Dev-PP.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
