@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Linn Latt Aein</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="shop-name">
+                <a href="index.html">Linn Latt Aein</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="donationportal.html">Contribute</a></li>
+                    <li><a href="aboutus.html">Our Story</a></li>
+                </ul>
+            </nav>
+            <div class="icon-container">
+                <a href="wishlist.html" class="icon-link">
+                    <img src="images/like.ico" alt="Like Icon" class="icon-img">
+                </a>
+                <a href="cart.html" class="icon-link">
+                    <img src="images/totebag.ico" alt="Cart Icon" class="icon-img">
+                </a>
+                <a href="account.html" class="icon-link">
+                    <img src="images/user.ico" alt="User Icon" class="icon-img">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="checkout-section">
+            <div class="section-container">
+                <h2 class="section-title">Checkout</h2>
+                <p class="section-text">Please provide your details and choose your payment method.</p>
+
+                <!-- Customer Information Form -->
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="zip" required>
+                    </div>
+
+                    <!-- Payment Options -->
+                    <div class="payment-options">
+                        <h3>Payment Method</h3>
+
+                        <!-- Cash on Delivery Option -->
+                        <div class="payment-option">
+                            <input type="radio" id="cod" name="payment-method" value="cod" checked>
+                            <label for="cod">Cash on Delivery (COD)</label>
+                        </div>
+
+                        <!-- Kpay Option -->
+                        <div class="payment-option">
+                            <input type="radio" id="kpay" name="payment-method" value="kpay">
+                            <label for="kpay">Kpay (Mobile Payment)</label>
+                        </div>
+                    </div>
+
+                    <!-- Kpay QR Code Section -->
+                    <div id="kpay-qr-container" class="kpay-qr-container" style="display: none;">
+                        <h3>Pay with Kpay</h3>
+                        <div id="kpay-qr-code"></div>
+                        <p>Scan the QR code to complete the payment. After payment, upload the screenshot of your payment receipt here.</p>
+                        <input type="file" id="payment-receipt" name="payment-receipt" accept="image/*">
+                    </div>
+
+                    <button type="submit" id="confirm-payment" class="confirm-payment-btn">Confirm Payment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Our Charity Shop</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="donationportal.html">Contribute</a></li>
+                    <li><a href="aboutus.html">Our Story</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: <a href="mailto:linnlattaein.charityshop@gmail.com">linnlattaein.charityshop@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+1234567890">+95 (952) 10-912</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/charityshop" target="_blank"><img src="images/Facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/charityshop" target="_blank"><img src="images/tiktok.png" alt="TikTok"></a>
+                    <a href="https://t.me/charityshop" target="_blank"><img src="images/telegram.png" alt="Telegram"></a>
+                    <a href="viber://chat?number=123456789" target="_blank"><img src="images/viber.png" alt="Viber"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Linn Latt Aein - Charity Shop. All rights reserved. | Designed by Dev-PP.</p>
+        </div>
+    </footer>
+
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

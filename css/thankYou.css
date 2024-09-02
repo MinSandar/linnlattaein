@@ -1,0 +1,45 @@
+/* Thank You Page Styles */
+.thankyou-section {
+    background-color: #f9f9f9; /* Light gray background for the thank you section */
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+}
+
+.section-container {
+    max-width: 600px; /* Max width for the container */
+    margin: 0 auto; /* Center-align the container */
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.section-title {
+    font-size: 2em; /* Larger font size for the title */
+    color: #228B22; /* Green color for the title */
+    margin-bottom: 20px; /* Space below the title */
+    font-weight: bold;
+}
+
+.section-text {
+    font-size: 1.2em; /* Font size for the description text */
+    color: #333333; /* Dark gray text color */
+    margin-bottom: 30px; /* Space below the text */
+    line-height: 1.6;
+}
+
+.home-btn {
+    display: inline-block; /* Inline block display for the button */
+    background-color: #228B22; /* Green background for the button */
+    color: white; /* White text color */
+    padding: 12px 24px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 1.2em; /* Font size for the button text */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.home-btn:hover {
+    background-color: #1e7f1e; /* Darker green on hover */
+}

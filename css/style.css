@@ -1,0 +1,382 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #e63946;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    background-color: #e9ecef;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.button {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background-color: #2a9d8f;
+}
+
+.secondary-btn {
+    background-color: #264653;
+    margin-left: 20px;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.product-item .price {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.explore-btn {
+    display: block;
+    text-align: center;
+    margin: 40px auto 0;
+    background-color: #264653;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.secondary-btn {
+    background-color: #264653;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonial-item h4 {
+    font-weight: bold;
+    color: #2a9d8f;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #264653;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-column p,
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 40px;
+    color: #adb5bd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .product-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Shop Banner */
+.shop-banner {
+    background-color: #e9ecef;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.shop-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.shop-banner p {
+    font-size: 1.2rem;
+}
+
+/* Shop Container */
+.shop-container {
+    display: flex;
+    margin-top: 40px;
+}
+
+/* Categories Sidebar */
+.categories-sidebar {
+    width: 25%;
+    padding-right: 20px;
+}
+
+.categories-sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.categories-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.categories-sidebar ul li a {
+    text-decoration: none;
+    color: #264653;
+    font-size: 1.1rem;
+}
+
+.categories-sidebar ul li a:hover {
+    color: #2a9d8f;
+}
+
+/* Product Grid */
+.product-grid {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.product-item .price {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Pagination */
+.pagination {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #264653;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.pagination a:hover {
+    background-color: #2a9d8f;
+}
+
+.pagination .prev,
+.pagination .next {
+    font-weight: bold;
+}

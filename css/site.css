@@ -663,6 +663,28 @@ h2 {
     background-color: #333333; /* Dark gray on hover */
 }
 
+/* Product Section Updates */
+.products-content .product-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.add-to-cart-btn {
+    display: block;
+    background-color: #6da871; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #4c7f57; /* Darker green on hover */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .products-content {

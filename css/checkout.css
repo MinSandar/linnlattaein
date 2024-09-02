@@ -1,0 +1,100 @@
+/* Checkout Page Styles */
+.checkout-section {
+    background-color: #f9f9f9; /* Light gray background for the checkout section */
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+}
+
+.section-container {
+    max-width: 800px; /* Max width for the container */
+    margin: 0 auto; /* Center-align the container */
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.section-title {
+    font-size: 2em; /* Larger font size for the title */
+    color: #228B22; /* Green color for the title */
+    margin-bottom: 20px; /* Space below the title */
+    font-weight: bold;
+}
+
+.section-text {
+    font-size: 1.2em; /* Font size for the description text */
+    color: #333333; /* Dark gray text color */
+    margin-bottom: 40px; /* Space below the text */
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+    text-align: left; /* Align text to the left */
+}
+
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Padding inside fields */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light gray border */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.payment-options {
+    margin-top: 30px; /* Space above payment options */
+    text-align: left; /* Align payment options to the left */
+}
+
+.payment-option {
+    margin-bottom: 15px; /* Space between payment options */
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and label */
+}
+
+.kpay-qr-container {
+    margin-top: 30px; /* Space above the QR code section */
+    padding: 20px; /* Padding inside the QR code section */
+    border: 1px solid #ddd; /* Border around the QR code section */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    text-align: center; /* Center-align text in QR code section */
+}
+
+.kpay-qr-container h3 {
+    font-size: 1.5em; /* Font size for the QR code header */
+    color: #333; /* Dark gray color for header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+#kpay-qr-code {
+    margin: 0 auto; /* Center-align the QR code */
+}
+
+.confirm-payment-btn {
+    background-color: #228B22; /* Green background for the button */
+    color: white; /* White text color */
+    padding: 15px 30px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2em; /* Font size for button text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.confirm-payment-btn:hover {
+    background-color: #1e7f1e; /* Darker green on hover */
+}
+
+input[type="file"] {
+    margin-top: 15px; /* Space above the file input */
+}
