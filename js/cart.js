@@ -36,6 +36,7 @@ function handleRemoveItem(event) {
         const updatedCartItems = cartItems.filter(item => item.name !== itemName);
         localStorage.setItem('cart', JSON.stringify(updatedCartItems)); // Update cart in local storage
         renderCartItems(); // Re-render cart items
+        updateCartBadge(); // Update badge count
     }
 }
 
